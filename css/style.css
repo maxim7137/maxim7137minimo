@@ -1,0 +1,232 @@
+/* ************* FONTS **************** */
+/* 
+font-family: 'Playfair Display', serif;
+font-family: 'Ubuntu', sans-serif;
+font-family: 'Inconsolata', monospace;
+ */
+
+/* *** typography *** */
+body {
+    font-family: 'Playfair Display', serif;
+    font-size: 14px;
+    color: #626262;
+}
+
+header p {
+    margin-block-start: 0;
+    margin-block-end: 0;
+}
+
+.logo a {
+    font-family: 'Inconsolata', monospace;
+    font-size: 30px;
+    font-weight: bold;
+    color: #000;
+
+}
+
+p.category,
+p.comment {
+    font-family: 'Ubuntu', sans-serif;
+    text-transform: uppercase;
+    margin: 0;
+    color: #b4ad9e;
+}
+
+h2 {
+    font-size: 30px;
+    height: 3em;
+    line-height: 3em;
+    margin: 0;
+    padding: 1% 0;
+
+}
+
+img.adaptive {
+    width: 100%;
+}
+
+/* *** HEADER *** */
+
+header {
+    text-transform: uppercase;
+}
+
+header div {
+    height: 5em;
+    line-height: 5em;
+}
+
+header nav a {
+    text-decoration: none;
+    color: #626262;
+}
+
+header nav a:hover {
+    text-decoration: underline;
+    color: #000;
+}
+
+header nav {
+    display: flex;
+    justify-content: flex-end;
+}
+
+header nav ul {
+    list-style: none;
+    padding-inline-start: 0;
+    margin-bottom: 0;
+    display: flex;
+    width: 70%;
+    justify-content: space-between;
+
+}
+
+/* *** MAIN *** */
+
+img {
+    padding-bottom: 10%;
+}
+
+section p {
+    padding: 1% 0 8%;
+}
+
+section+section {
+    padding: 4% 0;
+}
+
+section.newsletter {
+    background: #f0f0f0;
+    text-align: center;
+}
+
+section.newsletter input {
+    background: none;
+    border: none;
+}
+
+section.newsletter form {
+    border-bottom: 1px solid #000;
+    margin-bottom: 10%;
+
+}
+
+section.newsletter div.news {
+    display: flex;
+    justify-content: center;
+}
+
+div.form #email {
+    width: 89%;
+    padding: 6% 0 1%;
+    margin: 0;
+}
+body > section.newsletter > div > div > div > div > form > input[type=submit]:nth-child(2) {
+    width: 9%;
+}
+
+div.form #email:focus {
+    outline: none;
+}
+
+div.button {
+    text-align: center;
+    margin: 10% 0 40%;
+}
+
+button {
+    font-size: 20px;
+    border: 1px solid #626262;
+    padding: 2%;
+}
+
+button:hover,
+button:focus {
+    text-shadow: 2px 3px 3px #626262;
+    box-shadow: 2px 3px 3px #626262;
+    outline: none;
+}
+
+button:active {
+    text-shadow: 1px 1px 4px #626262;
+    box-shadow: 1px 1px 4px #626262;
+}
+
+footer {
+    background-color: #f0f0f0;
+}
+
+footer p {
+    margin-block-start: 0;
+    margin-block-end: 0;
+}
+
+
+footer div {
+    height: 7em;
+    line-height: 7em;
+}
+
+footer a, footer nav a {
+    text-decoration: none;
+    color: #626262;
+}
+
+footer a:hover, footer nav a:hover {
+    text-decoration: underline;
+    color: #000;
+}
+
+footer nav {
+    display: flex;
+    justify-content: flex-end;
+}
+
+footer nav ul {
+    list-style: none;
+    padding-inline-start: 0;
+    margin-bottom: 0;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+
+}
+
+footer a+a {
+    padding-left: 5%;
+}
+
+/* *** MEDIA *** */
+
+@media (min-width: 768px) and (max-width: 991px) { 
+    div.col-md-6 h2 {
+        font-size: 24px;
+    }
+ }
+
+ @media (min-width: 24px) and (max-width: 500px) { 
+     h2 {
+        font-size: 20px;
+    }
+
+    header nav li {
+        padding-left: 5px;
+    }
+
+    header nav ul {
+        width: 90%;
+    }
+
+    div.form #email {
+        width: 80%;
+        text-align: justify;
+    }
+
+    section.newsletter {
+        text-align: left;
+    }
+    body > section.newsletter > div > div > div > div > form > input[type=submit]:nth-child(2) {
+        width: 15%;
+    }
+}
